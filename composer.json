@@ -1,9 +1,13 @@
 {
     "name": "datakrama/eloquid",
     "description": "Eloquid - Auto UUID for Eloquent Model",
-    "type": "project",
+    "type": "library",
     "require": {
         "illuminate/support": "5.8.*|^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^9.3@dev"
     },
     "license": "MIT",
     "authors": [
@@ -17,5 +21,14 @@
         "psr-4": {
             "Datakrama\\Eloquid\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datakrama\\Eloquid\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     }
 }
