@@ -1,5 +1,5 @@
 # Eloquid
-[![Latest Stable Version](https://poser.pugx.org/datakrama/eloquid/v)](//packagist.org/packages/datakrama/eloquid) [![Total Downloads](https://poser.pugx.org/datakrama/eloquid/downloads)](//packagist.org/packages/datakrama/eloquid) [![License](https://poser.pugx.org/datakrama/eloquid/license)](//packagist.org/packages/datakrama/eloquid)
+![Unit Tests](https://github.com/datakrama/eloquid/workflows/Unit%20Tests/badge.svg) [![Latest Stable Version](https://poser.pugx.org/datakrama/eloquid/v)](//packagist.org/packages/datakrama/eloquid) [![Total Downloads](https://poser.pugx.org/datakrama/eloquid/downloads)](//packagist.org/packages/datakrama/eloquid) [![License](https://poser.pugx.org/datakrama/eloquid/license)](//packagist.org/packages/datakrama/eloquid)
 
 This package is created to insert UUID into Eloquent Model Primary Key (id) automatically.
 
