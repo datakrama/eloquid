@@ -3,10 +3,10 @@
     "description": "Eloquid - Auto UUID for Eloquent Model",
     "type": "library",
     "require": {
-        "illuminate/support": "5.8.*|^6.0"
+        "illuminate/support": "5.8.*|^6.0|^7.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
+        "orchestra/testbench": "^5.0",
         "phpunit/phpunit": "^9.3@dev"
     },
     "license": "MIT",

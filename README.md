@@ -3,15 +3,16 @@
 
 This package is created to insert UUID into Eloquent Model Primary Key (id) automatically.
 
-# Requirements
-- [Laravel 5.x|6.x](https://github.com/laravel/framework "Laravel")
+# Requirement
+- [Laravel 5.8.x|6.x|7.x](https://github.com/laravel/framework "Laravel")
 
-# Installations
+# Installation
 `$ composer require datakrama/eloquid`
 
 # Usages
-## For reguler model
-```<?php
+## Reguler model
+```
+<?php
 
 namespace App;
 
@@ -32,9 +33,10 @@ class Role extends Model
 }
 ```
 
-## For custom intermediate table model (Pivot)
+## Custom intermediate table model (Pivot)
 
-```<?php
+```
+<?php
 
 namespace App;
 
@@ -49,7 +51,7 @@ class RoleUser extends Pivot
 }
 ```
 
-# Credits
+# Credit
 - [Ahmad Husen](https://github.com/husenisme "Ahmad Husen")
 
 # Licence
