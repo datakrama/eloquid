@@ -5,7 +5,6 @@ namespace Datakrama\Eloquid\Test;
 use Datakrama\Eloquid\Test\Model\User;
 use Datakrama\Eloquid\Test\Model\Role;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Str;
 
 class ModelTest extends TestCase
 {
@@ -53,13 +52,13 @@ class ModelTest extends TestCase
         
         $this->assertEquals(3, $users->count());
         
-        $isUuid = Str::isUuid($users->first()->id);
+        $isUuid = $this->isUuid($users->first()->id);
         $this->assertTrue($isUuid);
 
-        $isUuid = Str::isUuid($users->first()->role[0]->pivot->id);
+        $isUuid = $this->isUuid($users->first()->role[0]->pivot->id);
         $this->assertTrue($isUuid);
 
-        $isUuid = Str::isUuid($users->first()->role[0]->id);
+        $isUuid = $this->isUuid($users->first()->role[0]->id);
         $this->assertTrue($isUuid);
 
         $this->assertEquals('Admin', $users->first()->role[0]->name);
