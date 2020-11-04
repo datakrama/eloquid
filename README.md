@@ -10,7 +10,7 @@ This package is created to insert UUID into Eloquent Model Primary Key (id) auto
 
 |   Laravel                             | Package                                               |
 | ------------------------------------- | ----------------------------------------------------- |
-| [5.8.x](https://laravel.com/docs/5.8) | [0.x](https://github.com/datakrama/lapires/tree/v0)   |
+| [5.8.x](https://laravel.com/docs/5.8) | [0.x](https://github.com/datakrama/eloquid/tree/v0)   |
 
 ## Installation
 `$ composer require datakrama/lapires:"^0.4"`
