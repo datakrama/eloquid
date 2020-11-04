@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  tests:
+    name: Tests P${{ matrix.php }} - L${{ matrix.laravel }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [7.1, 7.2, 7.3, 7.4, 8.0]
+        laravel: [^5.8.0, ^6.0, ^7.0, ^8.0]
+        exclude:
+          - php: 7.2
+            laravel: ^8.0
+          - php: 7.1
+        include:
+          - php: 7.1
+            laravel: ^5.8.0
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php }}
+        extensions: dom, curl, libxml, mbstring, zip
+        tools: composer:v2
+        coverage: none
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+      
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-node-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      # if: steps.composer-cache.outputs.cache-hit != 'true'
+      run: |
+        composer require "illuminate/support=${{ matrix.laravel }}" --no-update
+        composer update --prefer-dist --no-interaction --no-progress
+
+    - name: Run tests
+      run: composer test
