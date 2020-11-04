@@ -3,14 +3,20 @@
 
 This package is created to insert UUID into Eloquent Model Primary Key (id) automatically.
 
-# Requirement
-- [Laravel 5.8.x|6.x|7.x|8.x](https://github.com/laravel/framework "Laravel")
+## Requirement
+- [Laravel 5.8.x](https://github.com/laravel/framework "Laravel")
 
-# Installation
-`$ composer require datakrama/eloquid`
+## Laravel Compatibility
 
-# Usages
-## Reguler model
+|   Laravel                             | Package                                               |
+| ------------------------------------- | ----------------------------------------------------- |
+| [5.8.x](https://laravel.com/docs/5.8) | [0.x](https://github.com/datakrama/lapires/tree/v0)   |
+
+## Installation
+`$ composer require datakrama/lapires:"^0.4"`
+
+## Usages
+### Reguler model
 ```
 <?php
 
@@ -33,7 +39,7 @@ class Role extends Model
 }
 ```
 
-## Custom intermediate table model (Pivot)
+### Custom intermediate table model (Pivot)
 
 ```
 <?php
@@ -51,5 +57,5 @@ class RoleUser extends Pivot
 }
 ```
 
-# Licence
+## Licence
 The MIT License (MIT). Please see [License File](https://github.com/datakrama/eloquid/blob/master/LICENSE.md "License File") for more information.
