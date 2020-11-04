@@ -1,5 +1,5 @@
 # Eloquid
-![CI](https://github.com/datakrama/eloquid/workflows/CI/badge.svg) [![Latest Stable Version](https://poser.pugx.org/datakrama/eloquid/v)](//packagist.org/packages/datakrama/eloquid) [![Total Downloads](https://poser.pugx.org/datakrama/eloquid/downloads)](//packagist.org/packages/datakrama/eloquid) [![License](https://poser.pugx.org/datakrama/eloquid/license)](//packagist.org/packages/datakrama/eloquid)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/datakrama/eloquid/CI?style=flat-square) ![Packagist Version](https://img.shields.io/packagist/v/datakrama/eloquid?style=flat-square) ![Packagist Downloads](https://img.shields.io/packagist/dm/datakrama/eloquid?style=flat-square) ![Packagist License](https://img.shields.io/packagist/l/datakrama/eloquid?style=flat-square)
 
 This package is created to insert UUID into Eloquent Model Primary Key (id) automatically.
 
