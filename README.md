@@ -4,7 +4,7 @@
 This package is created to insert UUID into Eloquent Model Primary Key (id) automatically.
 
 ## Requirement
-- [Laravel 6.x|7.x](https://github.com/laravel/framework "Laravel")
+- [Laravel 8.x](https://github.com/laravel/framework "Laravel")
 
 ## Laravel Compatibility
 
@@ -13,9 +13,10 @@ This package is created to insert UUID into Eloquent Model Primary Key (id) auto
 | [5.8.x](https://laravel.com/docs/5.8) | [0.x](https://github.com/datakrama/eloquid/tree/v0)   |
 | [6.x](https://laravel.com/docs/6.x)   | [1.x](https://github.com/datakrama/eloquid/tree/v1)   |
 | [7.x](https://laravel.com/docs/7.x)   | [1.x](https://github.com/datakrama/eloquid/tree/v1)   |
+| [8.x](https://laravel.com/docs/8.x)   | [2.x](https://github.com/datakrama/eloquid/tree/v2)   |
 
 ## Installation
-`$ composer require datakrama/eloquid:"^1.0"`
+`$ composer require datakrama/eloquid:"^2.0"`
 
 ## Usages
 ### Reguler model

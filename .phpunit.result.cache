@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":278:{a:2:{s:7:"defects";a:2:{s:46:"Datakrama\Eloquid\Test\ModelTest::databaseTest";i:4;s:43:"Datakrama\Eloquid\Test\ModelTest::modelTest";i:4;}s:5:"times";a:2:{s:46:"Datakrama\Eloquid\Test\ModelTest::databaseTest";d:0.088;s:43:"Datakrama\Eloquid\Test\ModelTest::modelTest";d:0.028;}}}
