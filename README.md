@@ -1,9 +1,11 @@
 # Eloquid
+
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/datakrama/eloquid/CI?style=flat-square) ![Packagist Version](https://img.shields.io/packagist/v/datakrama/eloquid?style=flat-square) ![Packagist Downloads](https://img.shields.io/packagist/dm/datakrama/eloquid?style=flat-square) ![Packagist License](https://img.shields.io/packagist/l/datakrama/eloquid?style=flat-square)
 
 This package is created to insert UUID into Eloquent Model Primary Key (id) automatically.
 
 ## Requirement
+
 - [Laravel 8.x](https://github.com/laravel/framework "Laravel")
 
 ## Laravel Compatibility
@@ -16,11 +18,14 @@ This package is created to insert UUID into Eloquent Model Primary Key (id) auto
 | [8.x](https://laravel.com/docs/8.x)   | [2.x](https://github.com/datakrama/eloquid/tree/v2)   |
 
 ## Installation
+
 `$ composer require datakrama/eloquid:"^2.0"`
 
 ## Usages
+
 ### Reguler model
-```
+
+```php
 <?php
 
 namespace App;
@@ -44,7 +49,7 @@ class Role extends Model
 
 ### Custom intermediate table model (Pivot)
 
-```
+```php
 <?php
 
 namespace App;
@@ -61,4 +66,5 @@ class RoleUser extends Pivot
 ```
 
 ## Licence
+
 The MIT License (MIT). Please see [License File](https://github.com/datakrama/eloquid/blob/master/LICENSE.md "License File") for more information.
